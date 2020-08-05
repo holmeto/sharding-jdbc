@@ -25,6 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+
 @Configuration
 @EnableConfigurationProperties({ShardDataSourceProperties.class, MysqlDataSourceProperties.class})
 @MapperScan(basePackageClasses = {DaoPkg.class}, sqlSessionFactoryRef = "yuqiSqlSessionFactoryBean")
