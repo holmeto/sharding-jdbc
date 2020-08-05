@@ -1,0 +1,14 @@
+
+-- 启动你的mysql，创建两个数据库，分别叫 sharding_master 和 sharding_salve
+-- 分别在这两个数据库执行如下sql
+
+CREATE TABLE IF NOT EXISTS `t_order_0` (
+  `order_id` INT NOT NULL,
+  `user_id`  INT NOT NULL,
+  PRIMARY KEY (`order_id`)
+);
+CREATE TABLE IF NOT EXISTS `t_order_1` (
+  `order_id` INT NOT NULL,
+  `user_id`  INT NOT NULL,
+  PRIMARY KEY (`order_id`)
+);
